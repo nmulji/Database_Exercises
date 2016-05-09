@@ -5,7 +5,7 @@ WHERE first_name = 'Irena'
 		OR first_name = 'Maya'
 GROUP BY gender ASC;
 
-SELECT emp_no, last_name
+SELECT CONCAT(first_name, ' ', last_name)
 FROM employees
 WHERE last_name LIKE 'E%'
 	AND (
