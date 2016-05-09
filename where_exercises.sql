@@ -10,7 +10,9 @@ WHERE gender = 'M'
 SELECT last_name
 FROM employees
 WHERE last_name LIKE 'E%'
-	OR last_name LIKE '%e';
+	AND (
+	last_name LIKE '%e'
+	);
 
 SELECT hire_date
 FROM employees
