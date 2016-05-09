@@ -7,7 +7,7 @@ WHERE gender = 'M'
 		OR first_name = 'Maya'
 
 )
-ORDER BY last_name ASC, first_name ASC;
+ORDER BY last_name DESC, first_name DESC;
 
 SELECT emp_no, last_name
 FROM employees
@@ -15,7 +15,7 @@ WHERE last_name LIKE 'E%'
 	AND (
 	last_name LIKE '%e'
 )
-ORDER BY emp_no ASC;
+ORDER BY emp_no DESC;
 
 SELECT hire_date
 FROM employees
