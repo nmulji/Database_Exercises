@@ -1,8 +1,11 @@
-SELECT emp_no, first_name, last_name
+SELECT emp_no, first_name, last_name, gender
 FROM employees
-WHERE first_name = 'Irena'
-	OR first_name = 'Vidya'
-	OR first_name = 'Maya';
+WHERE gender = 'M'
+	AND (
+	first_name = 'Irena'
+		OR first_name = 'Vidya'
+		OR first_name = 'Maya'
+);
 
 SELECT last_name
 FROM employees
@@ -19,3 +22,5 @@ WHERE birth_date LIKE '%-12-25';
 SELECT last_name
 FROM employees
 WHERE last_name LIKE '%q%';
+
+SELECT * FROM employees
