@@ -11,4 +11,4 @@ WHERE hire_date BETWEEN '1990-01-01' AND '1999-12-31'
 	birth_date LIKE '%-12-25'
 )
 GROUP BY birth_date ASC, hire_date DESC
-LIMIT 5;
+LIMIT 5 OFFSET 45;
