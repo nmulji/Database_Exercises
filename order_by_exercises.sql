@@ -9,12 +9,13 @@ WHERE gender = 'M'
 )
 ORDER BY last_name ASC, first_name ASC;
 
-SELECT last_name
+SELECT emp_no, last_name
 FROM employees
 WHERE last_name LIKE 'E%'
 	AND (
 	last_name LIKE '%e'
-);
+)
+ORDER BY emp_no ASC;
 
 SELECT hire_date
 FROM employees
